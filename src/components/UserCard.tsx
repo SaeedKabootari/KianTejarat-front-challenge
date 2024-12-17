@@ -8,7 +8,8 @@ type UserProps = {
 
 export default function UserCard({ user }: UserProps) {
   return (
-    <Link className="w-[300px] h-[300px]" href={`/users/${user.id}`}>
+    // <Link className="w-[300px] h-[300px]" href={`/users/${user.id}`}>
+    <Link className="w-[300px] h-[300px]" href={`/photos/${user.id}`}>
       <Image src={user.profile_picture} width={300} height={300} alt="avatar" />
     </Link>
   );
